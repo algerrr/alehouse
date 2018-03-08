@@ -1,39 +1,13 @@
 <ngb-tabset [justify]="currentJustify">
-  <ngb-tab>
+  <!-- <ngb-tab>
     <ng-template ngbTabTitle>
       <span class="oi oi-home" title="Home" aria-hidden="true"></span>
       <b> Home</b>
     </ng-template>
     <ng-template ngbTabContent>
-      <div class="container">
-        <div class="row">
-          <!-- <img src="../assets/clah_logo.jpg" class="img-fluid" alt="Responsive image"> -->
-          <p>Thank you for visiting our website. We want to give you the opportunity to stay in touch with Cascade Locks Ale
-            House promotions and specials.
-            <br/> The Ale House changed ownership in November 2012 and was formally named Pacific Crest Pub and Hostile, Salmon
-            Row, Suzie's Suds Locker, Lakeside Inn and a few more.
-            <br/> Good News!!! We are open a lot. You can stop by and eat almost every night. Open Wednesday through Monday. Closed
-            on Tuesdays. Please come check us out!
-            <br/> We appreciate all the local support and visitors that are passing through.
-            <br/> Family friendly establishment with kid's meals and diaper changing accommodations. Also dogs are always welcome
-            outside.
-          </p>
-        </div>
-        <div class="row">
-          <ul>
-            <li>Monday: 11am - 9pm</li>
-            <li>Tuesday: Closed</li>
-            <li>Wednesday: 11am - 9pm</li>
-            <li>Thursday: 11am - 9pm</li>
-            <li>Friday: 11am - 9pm</li>
-            <li>Saturday: 11am - 9pm</li>
-            <li>Sunday: 11am - 9pm</li>
-          </ul>
-        </div>
-      </div>
     </ng-template>
-  </ngb-tab>
-  <ngb-tab>
+  </ngb-tab> -->
+  <!-- <ngb-tab>
     <ng-template ngbTabTitle>
       <span class="oi oi-clipboard" title="Food and Drinks" aria-hidden="true"></span>
       <b> Food and Drink</b>
@@ -41,7 +15,7 @@
     <ng-template ngbTabContent>
       <app-menu-accordian></app-menu-accordian>
     </ng-template>
-  </ngb-tab>
+  </ngb-tab> -->
   <ngb-tab>
     <ng-template ngbTabTitle>
       <span class="oi oi-signpost" title="Pacific Crest Trail" aria-hidden="true"></span>
@@ -59,6 +33,11 @@
           </div>
           <div class="col-lg-6">
             <img src="../assets/hiker_box_2.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="../assets/pct_hats.jpg" class="img-fluid" alt="Responsive image">
           </div>
         </div>
       </div>
@@ -115,6 +94,11 @@
         </div>
         <div class="row">
           <!-- <app-guestbook></app-guestbook> -->
+          <form action="https://jumprock.co/mail/helpalger" method="post">
+            <input type="text" name="email" placeholder="Email Address" />
+            <input type="text" name="message" placeholder="message" />
+            <input type="submit" value="Contact Us" />
+          </form>
         </div>
       </div>
     </ng-template>

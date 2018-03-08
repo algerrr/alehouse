@@ -1,24 +1,5 @@
-<form [formGroup]="radioGroupForm">
-  <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model">
-    <label ngbButtonLabel class="btn-primary">
-      <input ngbButton type="radio" [value]="1"> Left (pre-checked)
-    </label>
-    <label ngbButtonLabel class="btn-primary">
-      <input ngbButton type="radio" value="middle"> Middle
-    </label>
-    <label ngbButtonLabel class="btn-primary">
-      <input ngbButton type="radio" [value]="false"> Right
-    </label>
-  </div>
-  <div class="input-group">
-    <span class="input-group-addon" id="basic-addon1">@</span>
-    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-  </div>
-
-  <div class="input-group">
-    <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-    <span class="input-group-addon" id="basic-addon2">@example.com</span>
-  </div>
+<form action="https://jumprock.co/mail/helpalger" method="post">
+  <input type="text" name="email" placeholder="Email Address" />
+  <input type="text" name="message" placeholder="message" />
+  <input type="submit" value="Contact Us" />
 </form>
-<hr>
-<pre>{{radioGroupForm.value['model']}}</pre>
