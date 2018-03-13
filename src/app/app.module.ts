@@ -5,7 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { NgbdTabsetJustify } from './tabset-justify';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import { MenuAccordianComponent } from './menu-accordian/menu-accordian.component';
 import { GuestbookComponent } from './guestbook/guestbook.component';
@@ -30,7 +29,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NgbdTabsetJustify,
     HeaderComponentComponent,
     MenuAccordianComponent,
     GuestbookComponent,
