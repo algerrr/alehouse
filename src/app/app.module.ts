@@ -15,6 +15,7 @@ import { PctComponent } from './pct/pct.component';
 import { FindusComponent } from './findus/findus.component';
 import { EventsAndMediaComponent } from './events-and-media/events-and-media.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -37,7 +38,8 @@ const routes: Routes = [
     PctComponent,
     FindusComponent,
     EventsAndMediaComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
