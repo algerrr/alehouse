@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
+import { NgxFileDropModule } from "ngx-file-drop";
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { PctComponent } from './pct/pct.component';
 import { FindusComponent } from './findus/findus.component';
 import { EventsAndMediaComponent } from './events-and-media/events-and-media.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,7 +25,8 @@ const routes: Routes = [
   { path: 'pct', component: PctComponent },
   { path: 'findus', component: FindusComponent },
   { path: 'EventsAndMedia', component: EventsAndMediaComponent },
-  { path: 'ContactUs', component: ContactUsComponent }
+  { path: 'ContactUs', component: ContactUsComponent },
+  { path: 'FileUpload', component: FileUploadComponent }
 ];
 
 @NgModule({
@@ -37,13 +40,15 @@ const routes: Routes = [
     PctComponent,
     FindusComponent,
     EventsAndMediaComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgxFileDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
