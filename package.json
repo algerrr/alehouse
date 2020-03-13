@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "^8.0.3",
     "@angular/router": "^8.0.3",
     "@ng-bootstrap/ng-bootstrap": "^1.1.2",
-    "acorn": "^6.1.1",
+    "acorn": "^6.4.1",
     "core-js": "^2.4.1",
     "ngx-file-drop": "^8.0.3",
     "react": "^16.3.2",
