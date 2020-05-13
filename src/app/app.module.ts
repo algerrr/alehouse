@@ -45,7 +45,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot(),
+    NgbModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     NgxFileDropModule
