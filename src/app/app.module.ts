@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes } from '@angular/router';
 import { NgxFileDropModule } from "ngx-file-drop";
-
+import { MustMatchDirective } from './_helpers/must-match.directive';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
@@ -17,6 +18,7 @@ import { FindusComponent } from './findus/findus.component';
 import { EventsAndMediaComponent } from './events-and-media/events-and-media.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -41,14 +43,17 @@ const routes: Routes = [
     FindusComponent,
     EventsAndMediaComponent,
     ContactUsComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    MustMatchDirective
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    NgxFileDropModule
+    NgxFileDropModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
