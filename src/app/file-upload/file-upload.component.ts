@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxFileDropEntry, FileSystemFileEntry, FileSystemDirectoryEntry } from "ngx-file-drop";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-file-upload',
@@ -14,6 +15,11 @@ export class FileUploadComponent implements OnInit {
   }
  
   public files: NgxFileDropEntry[] = [];
+  model: any = {};
+
+  onSubmit() {
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model, null, 4));
+  }
  
   public dropped(files: NgxFileDropEntry[]) {
     this.files = files;
